@@ -1,0 +1,70 @@
+body {
+	margin: 0px;
+}
+
+img {
+	border-radius: 5%
+}
+
+a {
+	font-family: impact;
+	color: #8956FF;
+	text-decoration: none;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: pink;
+	height: 10vw;
+	border-style: none none solid none;
+}
+
+.header h1 {
+	margin: auto;
+	color: blue;
+	font-family: impact;
+	font-size: 8rem;
+	font-weight: normal;
+}
+
+.links {
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	font-size: 2.5rem;
+}
+
+.links > div {
+	width: 15vw;
+	height: 5vw;
+	background-color: pink;
+	margin: .5rem;
+	border-radius: 15px;
+}
+
+.links > div > a {
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+	height: 5.5rem;
+	line-height: 5.5rem;
+	margin: auto;
+}
+
+.grid, .row {
+	margin: auto;
+	width: 90vw;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+}
+
+.row > div > a > img {
+	width: 20vw;
+	height: auto;
+	margin: 5rem;
+}
