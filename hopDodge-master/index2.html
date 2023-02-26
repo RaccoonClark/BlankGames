@@ -25,7 +25,7 @@
     }  
     .headText{
         color:white;
-        text-align: left;
+       text-align: center;
         font-family: '8BITWONDERNominal';
         /* font-weight: normal;
         font-style: normal;  */
@@ -33,11 +33,10 @@
                                                 
     }
     .logoText{
-        display: block;
-        margin: auto;
+        
         color: white;
-        margin-left: 45%;
-        margin-right: 45%;
+        
+        text-align: center;
     }
 </style> 
 
@@ -45,10 +44,11 @@
 <div class="mainBody">
     <!-- <p id="test">hey</p> -->
     <iframe class="uVid" width="420" height="315"
-    src="https://www.youtube.com/embed?v=k55WUvB-s24">
+    src="https://www.youtube.com/watch?v=XGsy3oQTsB0">
     </iframe> 
 </div>
 
+<!-- Desktop -->
 <div class="aboutText">
     <p class="description">HopDodge is a 3D level editor/puzzle platforming game
         Players can create and share levels using the steam workshop. Levels can 
@@ -57,7 +57,18 @@
     </p>
 </div>
 
+<!-- Mobile -->
+<div class="aboutText1">
+    <p class="description1">HopDodge is a 3D level editor/puzzle platforming game
+        Players can create and share levels using the steam workshop. Levels can 
+        be challenging platforming, puzzle solving, or artistic showcases. You have 
+        all the freedom to create your own adventures.
+    </p>
+</div>
+
 <style>
+
+    
     .mainBody{
         background-image: url(./img/main.png);
         background-repeat: no-repeat;
@@ -75,6 +86,9 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
+
+
     .aboutText{
         margin-top: 2%;
         text-align: center;
@@ -90,21 +104,113 @@
         margin-right: 10%;
         font-family: '8BITWONDERNominal';
     }
+
+    .aboutText1{
+
+        margin-top: 5%;
+        text-align: center;
+        border-style: solid;
+        color: white;
+        margin-left: 15%;
+        margin-right: 15%;
+
+    }
+
+    .description1{
+
+        color: white;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-family: '8BITWONDERNominal';
+
+    }
 </style>
 
 
 <p class="space">hello</p>
 <p class="space">hello</p>
 <p class="space">hello</p>
+<!-- <p class="space">hello</p>
 <p class="space">hello</p>
-<p class="space">hello</p>
-<p class="space">hello</p>
+<p class="space">hello</p> -->
+
+
+
+
+
+<div class="gamePurchase">
+<iframe src="https://store.steampowered.com/widget/1965680/" frameborder="0" width="646" height="190"></iframe>
+</div>
+
+<div class="gamePurchase1">
+    <iframe src="https://store.steampowered.com/widget/1965680/" frameborder="0" width="350" height="190"></iframe>
+    </div>
+
+
+
 <style>
     .space{
        color: white;
         /* margin-top: 30%;
         margin-bottom: 30%; */
         opacity: 0%;
+    }
+
+    .gamePurchase{
+
+        margin: auto;
+        display: block;
+        text-align: center;
+        
+
+    }
+    .gamePurchase1{
+
+        margin: auto;
+        display: block;
+        text-align: center;
+
+
+}
+</style>
+
+
+
+
+
+<style>
+    /* Desktop */
+   @media only screen and (min-width: 851px) {
+ 
+    .gamePurchase1{
+        display: none;
+    }
+
+    .description1{
+        display: none;
+    }
+
+    .aboutText1{
+        display: none;
+    }
+ 
+ }
+
+    /* Mobile */
+    @media only screen and (max-width: 850px) {
+
+        .gamePurchase{
+            display: none;
+        }
+
+        .description{
+            display: none;
+        }
+
+        .aboutText{
+            display: none;
+        }
     }
 </style>
 
